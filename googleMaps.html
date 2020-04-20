@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps</title>
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+
+    <script src="js/store-data.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+
+    <div class="result"> Results for Zipcode: <span id="zip">0</span> </div>
+
+    <div id="heading">STORE LOCATOR</div>
+    <div class="search-container">
+        <div class="search">
+            <input type="text" id="zip-code-input" placeholder="Enter zip" />
+            <i class="fas fa-search" onclick="searchStores()"></i>
+        </div>
+    </div>
+
+    <div class="store-container">
+        <div class="stores">
+            <div class="single-store">
+                <div class="all-detail">
+                    <div class="store-details">
+                        <span>Metro Cinema</span>
+                        <span>Mumbai, 400020</span>
+                    </div>
+                    <div class="phone-number">
+                        111-112-2222
+                    </div>
+                </div>
+                <div class="index-display">
+                    <div class="index">1</div>
+                </div>
+            </div>
+            <hr>
+            <div class="single-store">
+                <div class="all-detail">
+                    <div class="store-details">
+                        <span>Infinity Mall, Andheri</span>
+                        <span>-west, Mumbai, 400053</span>
+                    </div>
+                    <div class="phone-number">
+                        111-112-2222
+                    </div>
+                </div>
+                <div class="index-display">
+                    <div class="index">2</div>
+                </div>
+            </div>
+            <hr>
+            <div class="single-store">
+                <div class="all-detail">
+                    <div class="store-details">
+                        <span>Metro Cinema</span>
+                        <span>Mumbai, 400020</span>
+                    </div>
+                    <div class="phone-number">
+                        111-112-2222
+                    </div>
+                </div>
+                <div class="index-display">
+                    <div class="index">3</div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div id="map"></div>
+
+    //Enter youtr API key below
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY&callback=initMap"
+        type="text/javascript"></script>
+</body>
+
+</html>
